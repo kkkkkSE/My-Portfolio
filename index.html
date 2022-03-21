@@ -16,10 +16,10 @@
     <header id="header">
       <nav>
         <ul class="hd_menu">
-          <li><a href="#aboutMe"><ion-icon name="person-circle-outline"></ion-icon></a></li>
-          <li><a href="#skill"><ion-icon name="build-outline"></ion-icon></a></li>
-          <li><a href="#work"><ion-icon name="desktop-outline"></ion-icon></a></li>
-          <li><a href="#contact"><ion-icon name="paper-plane-outline"></ion-icon></a></li>
+          <li><a href="#aboutMe">ABOUT ME</a></li>
+          <li><a href="#skill">SKILL</a></li>
+          <li><a href="#work">PROJECT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
@@ -44,14 +44,16 @@
         <div class="aboutMe_wrap">
           <div class="main_itdc">
             <div class="img_part">
-              <img src="./img/profile_img.jpg" alt="프로필사진">
+              <img src="./img/itsMe.jpg" alt="프로필사진">
             </div>
             <div class="txt_part">
               <div class="intro_title">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, reiciendis.</p>
+                <p>안녕하세요! 😊🖐<br> 미래의 리액트 전문가 김상은입니다.</p>
               </div>
               <div class="intro_desc">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime unde eveniet obcaecati? Necessitatibus vel hic sint libero ratione, debitis quam. <br><br> Possimus, ut. Placeat beatae laudantium eaque officia saepe et animi.</p>
+                <p>저는 직접 만든 작업물을 즉각 눈으로 확인하는 것에 강하게 흥미를 느껴 프론트엔드 개발을 시작하게 되었습니다.</p>
+                <p>프로젝트에서 팀원간의 소통이 얼마나 중요한지 알고, 적극적으로 의견을 내며 수용하겠습니다.</p>
+                <p>한 걸음씩 차근차근 밟아 나가면서 이 세상이 얼마나 넓고 깊은지 직접 보고 배우겠습니다.</p>
               </div>
             </div>
           </div>
@@ -99,7 +101,7 @@
                   <h4>이메일</h4>
                 </div>
                 <div class="itdc_cont">
-                  <p>eun2abc&#64;naver.com</p>
+                  <p>eun2abc&#64;gmail.com</p>
                 </div>
               </li>
             </ul>
@@ -283,28 +285,7 @@
 
           <ul class="develop_wrap work_cont">
             <li class="cont_child">
-              <div class="img_part" style="background-image: url(./img/work/comp/weather1.png);">
-                <div class="dark">
-                  <a href="http://silverprize.dothome.co.kr/pf/" target="blank_" class="move_page">
-                    <img src="./img/tap.png" alt="클릭 아이콘">
-                  </a>
-                </div>
-              </div>
-              <div class="txt_part">
-                <h4 class="work_title">날씨 정보 제공 기능</h4>
-                <ul class="work_desc">
-                  <li>ajax를 이용하여 날씨 정보 API 연동</li>
-                  <li>현재 위치를 읽어 정보를 조회하거나, 대표 도시명 버튼을 클릭하여 정보를 읽어옴</li>
-                  <li>Expire 정보가 포함된 Cookie를 생성하여 팝업창 일정시간 동안 띄우지 않기 기능</li>
-                </ul>
-                <ul class="work_feature">
-                  <li><span><ion-icon name="repeat-outline"></ion-icon></span>
-                    API 연동</li>
-                </ul>
-              </div>
-            </li>
-            <li class="cont_child">
-              <div class="img_part">
+              <div class="img_part" style="background-image: url(./img/work/comp/caffein.png);">
                 <div class="dark">
                   <a href="http://kkkkkse.github.io/caffein/" target="blank_" class="move_page">
                     <img src="./img/tap.png" alt="클릭 아이콘">
@@ -327,6 +308,28 @@
                 </ul>
               </div>
             </li>
+            <li class="cont_child">
+              <div class="img_part" style="background-image: url(./img/work/comp/weather1.png);">
+                <div class="dark">
+                  <a href="https://kkkkkse.github.io/openWeatherAPI/" target="blank_" class="move_page">
+                    <img src="./img/tap.png" alt="클릭 아이콘">
+                  </a>
+                </div>
+              </div>
+              <div class="txt_part">
+                <h4 class="work_title">날씨 정보 제공 기능</h4>
+                <ul class="work_desc">
+                  <li>ajax를 이용하여 날씨 정보 API 연동</li>
+                  <li>현재 위치를 읽어 정보를 조회하거나, 대표 도시명 버튼을 클릭하여 정보를 읽어옴</li>
+                  <li>Expire 정보가 포함된 Cookie를 생성하여 팝업창 일정시간 동안 띄우지 않기 기능</li>
+                </ul>
+                <ul class="work_feature">
+                  <li><span><ion-icon name="repeat-outline"></ion-icon></span>
+                    API 연동</li>
+                </ul>
+              </div>
+            </li>
+
           </ul>
         </div>
       </section>
@@ -342,9 +345,9 @@
             <img src="./img/icon-mail.png" alt="이메일 주소 확인">
             <p>Email</p>
           </div>
-          <div class="phone_num">
-            <img src="./img/icon-phone.png" alt="전화번호 확인">
-            <p>Phone</p>
+          <div class="github_address">
+            <img src="./img/icon-github.svg" alt="전화번호 확인">
+            <p>Github</p>
           </div>
         </div>
         <div class="send_form">
@@ -394,17 +397,17 @@
         <div class="mail_pop contact_pop">
           <div class="pop_content">
             <h3>Email</h3>
-            <input class="copy_txt" type="text" value="eun2abc@naver.com">
-            <p><span><ion-icon name="mail-outline"></ion-icon></span>eun2abc@naver.com</p>
+            <input class="copy_txt" type="text" value="eun2abc@gmail.com">
+            <p><span><ion-icon name="mail-outline"></ion-icon></span>eun2abc@gmail.com</p>
             <a href="#" class="pop_copy">복사하기</a>
             <a href="#" class="pop_close">닫기</a>
           </div>
         </div>
-        <div class="phone_pop contact_pop">
+        <div class="github_pop contact_pop">
           <div class="pop_content">
-            <h3>Phone Number</h3>
-            <input class="copy_txt" type="text" value="01000000000">
-            <p><span><ion-icon name="call-outline"></ion-icon></span>010－0000－0000</p>
+            <h3>Github</h3>
+            <input class="copy_txt" type="text" value="https://github.com/kkkkkSE">
+            <p><span><ion-icon name="logo-github"></ion-icon></span>https://github.com/kkkkkSE</p>
             <a href="#" class="pop_copy">복사하기</a>
             <a href="#" class="pop_close">닫기</a>
           </div>

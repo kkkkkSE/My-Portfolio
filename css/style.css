@@ -140,18 +140,19 @@ a {
 }
 #header nav .hd_menu li a {
   display: block;
-  line-height: 56px;
+  line-height: 50px;
   text-align: center;
   color: #fff;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 #header nav .hd_menu li.active a {
-  color: #333;
+  color: var(--m-color);
+  background-color: #fff;
 }
 
 .to_top {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   right: 20px;
   z-index: 5;
@@ -248,11 +249,16 @@ a {
   width: 100%;
   position: relative;
   z-index: 4;
+  height: 35%;
+  overflow: hidden;
 }
 #aboutMe .aboutMe_wrap .main_itdc .img_part img {
   display: block;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 #aboutMe .aboutMe_wrap .main_itdc .txt_part {
@@ -261,7 +267,7 @@ a {
 }
 #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_title {
   width: 100%;
-  padding: 10px 15px;
+  padding: 15px;
   background-color: var(--m-color);
   border-radius: 100px;
   text-align: center;
@@ -269,6 +275,7 @@ a {
   line-height: 1.5;
   position: relative;
   margin: 0 auto;
+  font-size: 18px;
 }
 #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_title::after {
   content: "";
@@ -285,13 +292,13 @@ a {
 #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_title p {
 }
 #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_desc {
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
-  line-height: 1.5;
 }
 #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_desc p {
-  padding: 0 10px;
-  font-size: 14px;
+  padding: 18px 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 #aboutMe .aboutMe_wrap .basic_itdc {
@@ -521,11 +528,11 @@ a {
   padding-bottom: 30px;
 }
 #skill .skill_wrap .skill_info li .img_part {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 #skill .skill_wrap .skill_info li .img_part img {
   display: block;
-  height: 40px;
+  height: 50px;
   margin: 0 auto;
 }
 #skill .skill_wrap .skill_info li .txt_part h4 {
@@ -534,7 +541,7 @@ a {
   position: relative;
   background-color: var(--m-color);
   color: #fff;
-  border-radius: 5px 5px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 /* #skill .skill_wrap .skill_info li .txt_part h4::before{
   content: "";
@@ -550,10 +557,15 @@ a {
 
 #skill .skill_wrap .skill_info li .txt_part p {
   font-size: 14px;
-  padding: 10px;
+  padding: 10px 15px;
+  height: 110px;
   border: 1px solid var(--m-color);
-  border-radius: 0 0 5px 5px;
-  line-height: 1.2;
+  border-radius: 0 0 10px 10px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: keep-all;
 }
 
 /* #skill .slick-dots li.slick-active{
@@ -745,17 +757,17 @@ a {
 
 #contact .send_mail:hover,
 #contact .mail_address:hover,
-#contact .phone_num:hover {
+#contact .github_address:hover {
   background-color: #fff;
 }
 #contact .send_mail:hover img,
 #contact .mail_address:hover img,
-#contact .phone_num:hover img {
+#contact .github_address:hover img {
   filter: invert(0.2);
 }
 #contact .send_mail:hover p,
 #contact .mail_address:hover p,
-#contact .phone_num:hover p {
+#contact .github_address:hover p {
   color: #333;
 }
 
@@ -944,15 +956,15 @@ a {
   width: 300px;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  padding: 30px;
+  padding: 30px 0;
   border-radius: 10px;
   text-align: center;
 }
 
 #contact .pop_content input {
   position: absolute;
-  right: 200%;
-  top: 200%;
+  right: 500%;
+  top: 500%;
   height: 1px;
 }
 
@@ -1035,8 +1047,8 @@ a {
     height: 60px;
   }
   #header nav .hd_menu li a {
-    line-height: 66px;
-    font-size: 30px;
+    line-height: 60px;
+    font-size: 20px;
   }
 
   .to_top {
@@ -1060,6 +1072,9 @@ a {
   #aboutMe .aboutMe_wrap .main_itdc {
     padding: 100px 25px 0;
   }
+  #aboutMe .aboutMe_wrap .main_itdc .img_part {
+    height: 40%;
+  }
   #aboutMe .aboutMe_wrap .main_itdc .img_part img {
     width: 80%;
   }
@@ -1073,10 +1088,11 @@ a {
     width: 60%;
   }
   #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_desc {
-    padding-top: 5%;
+    padding: 20px 10%;
   }
   #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_desc p {
     font-size: 16px;
+    word-break: keep-all;
   }
 
   #aboutMe .aboutMe_wrap .basic_itdc {
@@ -1154,8 +1170,8 @@ a {
     font-size: 20px;
   }
   #skill .skill_wrap .skill_info li .txt_part p {
-    padding: 20px;
-    font-size: 18px;
+    padding: 20px 25px;
+    font-size: 16px;
   }
 
   /******************** work *******************/
@@ -1293,7 +1309,7 @@ a {
 
   #contact .pop_content {
     width: 400px;
-    padding: 40px;
+    padding: 40px 0;
   }
   #contact .contact_pop h3 {
     font-size: 24px;

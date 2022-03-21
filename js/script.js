@@ -402,8 +402,8 @@ $(document).ready(function () {
   $(".mail_address").click(function () {
     $(".mail_pop").fadeIn();
   });
-  $(".phone_num").click(function () {
-    $(".phone_pop").fadeIn();
+  $(".github_address").click(function () {
+    $(".github_pop").fadeIn();
   });
 
   $(".pop_content .pop_copy").click(function () {
@@ -419,27 +419,34 @@ $(document).ready(function () {
 //////////// skill section data
 const insert_skill = document.querySelector("#skill .skill_wrap");
 const skill_arr = [
-  ["HTML5", "Lorem ipsum dolor sit.", "icons8-html-5.svg"],
-  ["CSS", "Lorem ipsum dolor sit.", "icons8-css3.svg"],
-  ["Javascript", "Lorem ipsum dolor sit.", "icons8-javascript.svg"],
+  ["HTML5", "HTML5 문법의 이해, 적절하게 활용하여 마크업", "icons8-html-5.svg"],
+  ["CSS", "디자인 시안을 바탕으로 UI 스타일링에 활용", "icons8-css3.svg"],
+  [
+    "Javascript",
+    "모던 자바스크립트의 이해, 이벤트에 따른 문서조작 가능",
+    "icons8-javascript.svg",
+  ],
   [
     "jQuery",
-    "Lorem ipsum dolor sit.",
+    "다양한 플러그인 사용 가능",
     "icons8-jquery-is-a-javascript-library-designed-to-simplify-html-96.png",
   ],
-  ["React", "Lorem ipsum dolor sit.", "icons8-react-native.svg"],
-  ["Typescript", "Lorem ipsum dolor sit.", "icons8-typescript.svg"],
-  ["PHP", "Lorem ipsum dolor sit.", "php.png"],
-  ["Git", "Lorem ipsum dolor sit.", "icons8-git.svg"],
+  [
+    "React",
+    "SPA 웹사이트 제작 경험 보유, styled-components의 사용과 반응형 웹 적용 가능",
+    "icons8-react-native.svg",
+  ],
+  ["Typescript", "Interface를 이용한 type 정의", "icons8-typescript.svg"],
+  ["Git", "Git을 활용한 코드 관리, CI/CD 경험 보유", "icons8-git.svg"],
 ];
 let skill_data_wrap = "";
 
-for (i = 0; i < skill_arr.length / 6; i++) {
+for (i = 0; i < skill_arr.length / 4; i++) {
   // i = 0, 1
   let skill_data = "";
-  i = i * 6;
+  i = i * 4;
 
-  for (j = i; j < i + 6; j++) {
+  for (j = i; j < i + 4; j++) {
     skill_data += `
       <li>
         <div class="img_part">
