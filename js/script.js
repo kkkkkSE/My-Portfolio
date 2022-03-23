@@ -311,6 +311,11 @@ $(document).ready(function () {
 
     $("ul.work_cont").removeClass("active");
     $("ul.work_cont").eq(btn_index).addClass("active");
+
+    w_cont_index = 0;
+    $(".work_cont.active").css("margin-left", 0);
+    $(".work_btns .left_btn").css("opacity", 0);
+    $(".work_btns .right_btn").css("opacity", 1);
   });
 
   ///////////////////// work section content
@@ -383,6 +388,37 @@ $(document).ready(function () {
       // $(".work_cont.active").prepend(last_cont);
       // $(".work_cont.active").css({"margin-left" : "-100%"});
       // $(".work_cont.active").stop().animate({"margin-left" : "0"}, 500);
+    }
+  });
+
+  let w_cont_index = 0;
+  // 태블릿 버전 - 버튼 클릭
+  $(".work_btns .left_btn").click(function () {
+    if (w_cont_index != 0) {
+      $(".work_cont.active")
+        .stop()
+        .animate({ "margin-left": `${(w_cont_index - 1) * -100}%` }, 500);
+      w_cont_index = w_cont_index - 1;
+
+      if (w_cont_index == 0) {
+        $(".work_btns .left_btn").css("opacity", 0);
+      }
+      $(".work_btns .right_btn").css("opacity", 1);
+    }
+  });
+
+  $(".work_btns .right_btn").click(function () {
+    const w_cont_length = $(".work_cont.active .cont_child").length - 1;
+    if (w_cont_index != w_cont_length) {
+      $(".work_cont.active")
+        .stop()
+        .animate({ "margin-left": `${(w_cont_index + 1) * -100}%` }, 500);
+      w_cont_index = w_cont_index + 1;
+
+      if (w_cont_index == w_cont_length) {
+        $(".work_btns .right_btn").css("opacity", 0);
+      }
+      $(".work_btns .left_btn").css("opacity", 1);
     }
   });
 

@@ -579,21 +579,25 @@ a {
   padding: 80px 25px 0;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 #work .sec_title {
 }
 
 #work .work_tap {
-  padding-top: 15px;
+  padding: 15px 20px 0;
   display: flex;
   justify-content: space-between;
 }
 #work .work_tap li {
   background-color: #fff;
+  border: 1px solid var(--m-color);
+  width: 45%;
+  text-align: center;
   height: 30px;
   line-height: 30px;
-  padding: 0 8%;
+  padding: 0 20px;
   border-radius: 100px;
   cursor: pointer;
 }
@@ -611,8 +615,8 @@ a {
 #work .work_wrap {
   width: 100%;
   height: calc(100% - 85px);
-  overflow: hidden;
   margin: 0 auto;
+  position: relative;
 }
 #work .work_wrap .work_cont {
   display: none;
@@ -630,7 +634,7 @@ a {
 }
 #work .work_wrap .work_cont .cont_child .img_part {
   width: 95%;
-  height: 50%;
+  height: 45%;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 15px 15px 0 0;
@@ -667,7 +671,7 @@ a {
   border-radius: 0 0 15px 15px;
 }
 #work .work_wrap .work_cont .cont_child .txt_part .work_title {
-  line-height: 20px;
+  line-height: 1.5;
   padding-bottom: 15px;
   margin-bottom: 15px;
   font-size: 18px;
@@ -699,14 +703,25 @@ a {
 }
 #work .work_wrap .work_cont .cont_child .txt_part .work_feature li {
   font-size: 14px;
+  display: inline-block;
+  border: 1px solid var(--m-color);
+  padding: 0px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 #work .work_wrap .work_cont .cont_child .txt_part .work_feature li span {
   display: inline-block;
   font-size: 18px;
   width: 20px;
-  color: var(--m-color);
   vertical-align: middle;
-  padding-right: 5px;
+  padding-right: 8px;
+  padding-top: 4px;
+  color: var(--m-color);
+}
+
+#work .work_btns {
+  display: none;
 }
 
 /******************** contact *******************/
@@ -1000,17 +1015,24 @@ a {
   font-size: 18px;
 }
 
-#contact .pop_content a {
+#contact .pop_content a.pop_copy,
+#contact .pop_content a.pop_close,
+#contact .pop_content a.pop_go {
   font-size: 14px;
   color: #fff;
   padding: 10px 15px;
-  background-color: #777;
   border-radius: 5px;
 }
-#contact .pop_content .pop_copy {
+#contact .pop_content a.pop_close {
+  background-color: #777;
+}
+
+#contact .pop_content .pop_copy,
+#contact .pop_content .pop_go {
   background-color: var(--m-color);
 }
-#contact .pop_content .pop_copy:hover {
+#contact .pop_content .pop_copy:hover,
+#contact .pop_content .pop_go:hover {
   background-color: #8e82cd;
 }
 #contact .pop_content .pop_close:hover {
@@ -1180,7 +1202,7 @@ a {
     padding: 100px 25px 0;
   }
   #work .work_tap {
-    padding-top: 25px;
+    padding: 25px 40px 0;
     justify-content: space-around;
   }
   #work .work_tap li {
@@ -1199,8 +1221,17 @@ a {
   }
 
   #work .work_wrap .work_cont .cont_child .img_part {
-    height: 55%;
+    height: 50%;
   }
+
+  #work .work_wrap .work_cont .cont_child .img_part .dark {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  #work .work_wrap .work_cont .cont_child .img_part:hover .dark {
+    opacity: 1;
+  }
+
   #work .work_wrap .work_cont .cont_child .txt_part {
     padding: 25px 20px;
   }
@@ -1219,6 +1250,23 @@ a {
   }
   #work .work_wrap .work_cont .cont_child .txt_part .work_feature li span {
     font-size: 20px;
+    padding-top: 8px;
+  }
+
+  #work .work_btns {
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    font-size: 80px;
+    justify-content: space-between;
+    color: #333;
+    cursor: pointer;
+  }
+  #work .work_btns .left_btn {
+    opacity: 0;
   }
 
   /******************** contact *******************/
@@ -1320,7 +1368,9 @@ a {
   #contact .pop_content p span {
     font-size: 20px;
   }
-  #contact .pop_content a {
+  #contact .pop_content a.pop_copy,
+  #contact .pop_content a.pop_close,
+  #contact .pop_content a.pop_go {
     font-size: 16px;
     padding: 15px 20px;
     margin: 0 5px;
