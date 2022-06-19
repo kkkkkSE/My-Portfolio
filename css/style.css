@@ -123,7 +123,6 @@ a {
 
 #header {
   width: 100%;
-  height: 50px;
   position: absolute;
   background-color: var(--m-color);
   z-index: 3;
@@ -140,10 +139,10 @@ a {
 }
 #header nav .hd_menu li a {
   display: block;
-  line-height: 50px;
+  padding: 20px 0;
   text-align: center;
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #header nav .hd_menu li.active a {
@@ -267,7 +266,7 @@ a {
 }
 #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_title {
   width: 100%;
-  padding: 15px;
+  padding: 10px 15px;
   background-color: var(--m-color);
   border-radius: 100px;
   text-align: center;
@@ -275,7 +274,7 @@ a {
   line-height: 1.5;
   position: relative;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 16px;
 }
 #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_title::after {
   content: "";
@@ -292,12 +291,12 @@ a {
 #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_title p {
 }
 #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_desc {
-  padding-top: 10px;
+  padding-top: 5px;
   text-align: center;
 }
 #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_desc p {
-  padding: 18px 10px 0;
-  font-size: 16px;
+  padding: 14px 8px 0;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -325,7 +324,7 @@ a {
   position: relative;
   /* text-align: center; */
   background-color: var(--m-color);
-  padding: 0 10px 0 20px;
+  padding-left: 20px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -345,7 +344,7 @@ a {
 
 #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_title img {
   display: block;
-  width: 50px;
+  width: 40px;
   filter: invert(1);
 }
 #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_title h4 {
@@ -366,7 +365,7 @@ a {
 }
 #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_cont p {
   display: inline-block;
-  font-size: 14px;
+  font-size: 3px;
 }
 
 #aboutMe .aboutMe_wrap .study_itdc {
@@ -557,7 +556,7 @@ a {
 
 #skill .skill_wrap .skill_info li .txt_part p {
   font-size: 14px;
-  padding: 10px 15px;
+  padding: 10px;
   min-height: 100px;
   border: 1px solid var(--m-color);
   border-radius: 0 0 10px 10px;
@@ -635,7 +634,7 @@ a {
 }
 #work .work_wrap .work_cont .cont_child .img_part {
   width: 95%;
-  height: 40%;
+  height: 30%;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 15px 15px 0 0;
@@ -747,8 +746,8 @@ a {
   justify-content: center;
 }
 #contact .icons > div {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   border: 2px solid #fff;
   border-radius: 50%;
   display: flex;
@@ -1067,10 +1066,8 @@ a {
   }
   /******************** header *******************/
   #header {
-    height: 60px;
   }
   #header nav .hd_menu li a {
-    line-height: 60px;
     font-size: 16px;
   }
 
