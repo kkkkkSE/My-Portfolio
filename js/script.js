@@ -27,8 +27,7 @@ $(document).ready(function () {
 
       if (delta < 0) {
         // 휠 내림
-        console.log("내림");
-        console.log($(elmIndex).next());
+
         if ($(elmIndex).index() != $(elm).length - 1) {
           // 다음 섹션이 존재할 경우
           $(elm).removeClass("active");
@@ -46,7 +45,6 @@ $(document).ready(function () {
         }
       } else {
         // 휠 올림
-        console.log("올림");
 
         if ($(elmIndex).index() != 0) {
           // 휠 올릴 때 이전 섹션이 존재할 경우
@@ -227,22 +225,17 @@ $(document).ready(function () {
 
     // 양수 : 하단컨텐츠, 음수 : 상단컨텐츠
     if ($t_move > 100) {
-      console.log("올림");
       next(evt);
     } else if ($t_move < -100) {
-      console.log("내림");
-
       prev(evt);
     }
   }
 
   $(elm).on("touchstart", function (e) {
-    console.log("터치 시작");
     $t_start = e.changedTouches[0].pageY;
     // 터치 시 Y값
   });
   $(elm).on("touchend", function (e) {
-    console.log("터치 끝");
     $t_end = e.changedTouches[0].pageY;
     // 터치 해제 시 Y값
     touchmove(e); // 터치가 끝나면 Y값이 양수인지 음수인지 계산하여 이전/다음 컨텐츠로 이동
@@ -322,7 +315,6 @@ $(document).ready(function () {
   $("#work .work_cont").each(function (index) {
     let cont_num = $(this).find(".cont_child").length; // 각 work 탭에 들어간 컨텐츠의 갯수
     let wrap_width = cont_num * 100;
-    console.log(wrap_width);
     $(this).css("width", `${wrap_width}%`);
     $(this)
       .find(".cont_child")
@@ -332,12 +324,10 @@ $(document).ready(function () {
   let $w_t_start, $w_t_end;
 
   $(".cont_child").on("touchstart", function (e) {
-    console.log("터치 시작");
     $w_t_start = e.changedTouches[0].pageX;
   });
 
   $(".cont_child").on("touchend", function (e) {
-    console.log("터치 끝");
     $w_t_end = e.changedTouches[0].pageX;
     // touchmove(e);
 

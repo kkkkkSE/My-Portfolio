@@ -71,7 +71,7 @@ a {
 }
 
 .sec_title {
-  font-size: 28px;
+  font-size: 26px;
   line-height: 40px;
   font-family: "Noto Serif";
   text-align: center;
@@ -558,7 +558,7 @@ a {
 #skill .skill_wrap .skill_info li .txt_part p {
   font-size: 14px;
   padding: 10px 15px;
-  height: 110px;
+  min-height: 100px;
   border: 1px solid var(--m-color);
   border-radius: 0 0 10px 10px;
   line-height: 1.5;
@@ -586,18 +586,19 @@ a {
 }
 
 #work .work_tap {
-  padding: 15px 20px 0;
+  padding: 15px 10px 0;
   display: flex;
   justify-content: space-between;
 }
 #work .work_tap li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   border: 1px solid var(--m-color);
-  width: 45%;
+  width: 48%;
   text-align: center;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 20px;
+  padding: 5px 20px;
   border-radius: 100px;
   cursor: pointer;
 }
@@ -621,7 +622,7 @@ a {
 #work .work_wrap .work_cont {
   display: none;
   height: 100%;
-  padding: 30px 0;
+  padding: 20px 0;
   display: none;
   flex-wrap: wrap;
 }
@@ -634,7 +635,7 @@ a {
 }
 #work .work_wrap .work_cont .cont_child .img_part {
   width: 95%;
-  height: 45%;
+  height: 40%;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 15px 15px 0 0;
@@ -666,15 +667,15 @@ a {
   background-color: rgba(255, 255, 255, 0.7);
   width: 95%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 16px;
   /* height: calc(50% - 30px); */
   border-radius: 0 0 15px 15px;
 }
 #work .work_wrap .work_cont .cont_child .txt_part .work_title {
-  line-height: 1.5;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-  font-size: 18px;
+  line-height: 1.4;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
   border-bottom: 1px solid #333;
 }
 #work .work_wrap .work_cont .cont_child .txt_part .work_desc {
@@ -692,12 +693,12 @@ a {
   vertical-align: middle;
   padding-right: 5px;
   width: 20px;
-  font-size: 18px;
+  font-size: 16px;
 }
 #work .work_wrap .work_cont .cont_child .txt_part .work_feature {
   border-top: 1px dashed #ccc;
-  padding-top: 15px;
-  margin-top: 15px;
+  padding-top: 10px;
+  margin-top: 10px;
   height: 50%;
   line-height: 1.5;
 }
@@ -707,12 +708,12 @@ a {
   border: 1px solid var(--m-color);
   padding: 0px 10px;
   border-radius: 20px;
-  margin-right: 10px;
+  margin-right: 6px;
   margin-bottom: 5px;
 }
 #work .work_wrap .work_cont .cont_child .txt_part .work_feature li span {
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
   width: 20px;
   vertical-align: middle;
   padding-right: 8px;
@@ -760,7 +761,7 @@ a {
 }
 #contact > div img {
   display: block;
-  height: 60px;
+  height: 40px;
   filter: invert(1);
 }
 #contact > div p {
@@ -864,7 +865,7 @@ a {
   outline-color: var(--m-color);
 }
 #contact .send_form form fieldset .formlist ul li .inputbox input::placeholder {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #contact .send_form form fieldset .formlist ul li .inputbox textarea {
@@ -886,7 +887,7 @@ a {
   li
   .inputbox
   textarea::placeholder {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #contact .send_form form fieldset .formlist .btn_box {
@@ -1041,9 +1042,9 @@ a {
 
 /**************************** 반응형 - 태블릿*****************************/
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   #all_wrap {
-    width: 768px;
+    width: 500px;
     margin: 0 auto;
     position: relative;
     background-color: #fff;
@@ -1053,7 +1054,7 @@ a {
     color: #fff;
   }
   .sec_title {
-    font-size: 34px;
+    font-size: 26px;
   }
 
   .slick-dots {
@@ -1070,7 +1071,7 @@ a {
   }
   #header nav .hd_menu li a {
     line-height: 60px;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .to_top {
@@ -1092,68 +1093,67 @@ a {
 
   /******************** about me *******************/
   #aboutMe .aboutMe_wrap .main_itdc {
-    padding: 100px 25px 0;
+    padding: 90px 25px 0;
   }
   #aboutMe .aboutMe_wrap .main_itdc .img_part {
     height: 40%;
   }
   #aboutMe .aboutMe_wrap .main_itdc .img_part img {
-    width: 80%;
   }
 
   #aboutMe .aboutMe_wrap .main_itdc .txt_part {
     padding-top: 5%;
   }
   #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_title {
-    font-size: 18px;
-    padding: 20px 30px;
-    width: 60%;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 80%;
   }
   #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_desc {
-    padding: 20px 10%;
+    padding: 10px 5%;
   }
   #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_desc p {
-    font-size: 16px;
+    font-size: 14px;
     word-break: keep-all;
   }
 
   #aboutMe .aboutMe_wrap .basic_itdc {
-    padding: 100px 25px 0;
+    padding: 90px 25px 0;
   }
   #aboutMe .aboutMe_wrap .basic_itdc ul li {
-    width: 80%;
-    margin-bottom: 30px;
-    height: 100px;
+    width: 90%;
+    margin-bottom: 20px;
+    height: 80px;
   }
   #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_cont {
-    line-height: 96px;
+    line-height: 76px;
   }
   #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_title {
     padding: 0 20px 0 30px;
   }
   #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_title h4 {
-    font-size: 18px;
+    font-size: 16px;
     width: 80px;
   }
   #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_cont p {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   #aboutMe .aboutMe_wrap .study_itdc {
-    padding: 100px 25px 0;
+    padding: 90px 25px 0;
   }
   #aboutMe .aboutMe_wrap .study_itdc > ul {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   #aboutMe .aboutMe_wrap .study_itdc > ul > li {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
   #aboutMe .aboutMe_wrap .study_itdc > ul > li h4 {
-    font-size: 22px;
+    font-size: 18px;
   }
   #aboutMe .aboutMe_wrap .study_itdc > ul > li h4 span {
-    font-size: 22px;
+    font-size: 18px;
     padding-right: 10px;
   }
 
@@ -1161,67 +1161,65 @@ a {
     padding: 20px;
   }
   #aboutMe .aboutMe_wrap .study_itdc > ul > li > ul > li {
-    font-size: 18px;
+    font-size: 15px;
   }
   #aboutMe .aboutMe_wrap .study_itdc > ul > li:nth-child(2) > ul > li span {
     /* top: 15%; */
-    font-size: 16px;
+    font-size: 14px;
   }
 
   /******************** skill *******************/
 
   #skill {
-    padding: 100px 25px 0;
+    padding: 90px 25px 0;
   }
   #skill .skill_wrap {
     padding: 30px 0;
   }
   #skill .skill_wrap .skill_info li {
     width: 40%;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   #skill .skill_wrap .skill_info li .img_part {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   #skill .skill_wrap .skill_info li .img_part img {
-    height: 70px;
+    height: 60px;
   }
   #skill .skill_wrap .skill_info li .txt_part h4 {
     padding: 10px 0;
-    font-size: 20px;
+    font-size: 16px;
   }
   #skill .skill_wrap .skill_info li .txt_part p {
-    padding: 20px 25px;
-    font-size: 16px;
+    padding: 5px 15px;
+    font-size: 14px;
   }
 
   /******************** work *******************/
 
   #work {
-    padding: 100px 25px 0;
+    padding: 90px 25px 0;
   }
   #work .work_tap {
-    padding: 25px 40px 0;
+    padding: 20px 20px 0;
     justify-content: space-around;
   }
   #work .work_tap li {
-    height: 40px;
-    line-height: 40px;
   }
   #work .work_tap li a {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   #work .work_wrap {
-    width: 90%;
+    width: 100%;
   }
   #work .work_wrap .work_cont {
-    padding: 40px 0;
+    padding: 20px 0;
   }
 
   #work .work_wrap .work_cont .cont_child .img_part {
-    height: 50%;
+    height: 40%;
   }
 
   #work .work_wrap .work_cont .cont_child .img_part .dark {
@@ -1233,24 +1231,24 @@ a {
   }
 
   #work .work_wrap .work_cont .cont_child .txt_part {
-    padding: 25px 20px;
+    padding: 20px;
   }
   #work .work_wrap .work_cont .cont_child .txt_part .work_title {
-    font-size: 20px;
-    padding-bottom: 20px;
+    font-size: 16px;
+    padding-bottom: 12px;
   }
   #work .work_wrap .work_cont .cont_child .txt_part .work_desc li {
-    font-size: 18px;
+    font-size: 15px;
   }
   #work .work_wrap .work_cont .cont_child .txt_part .work_desc li span {
-    font-size: 20px;
+    font-size: 16px;
   }
   #work .work_wrap .work_cont .cont_child .txt_part .work_feature li {
-    font-size: 18px;
+    font-size: 13px;
   }
   #work .work_wrap .work_cont .cont_child .txt_part .work_feature li span {
-    font-size: 20px;
-    padding-top: 8px;
+    font-size: 16px;
+    padding-top: 5px;
   }
 
   #work .work_btns {
@@ -1271,39 +1269,40 @@ a {
 
   /******************** contact *******************/
   #contact {
-    padding: 100px 25px 0;
+    padding: 90px 25px 0;
   }
   #contact .icons {
     height: calc(100vh - 120px);
   }
   #contact .icons > div {
-    width: 220px;
-    height: 220px;
+    width: 140px;
+    height: 140px;
   }
+
   #contact > div p {
     padding-top: 15px;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   #contact .send_form form fieldset .formlist {
-    padding: 0 8%;
+    padding: 20px;
   }
   #contact .send_form form fieldset .formlist legend {
-    font-size: 24px;
+    font-size: 18px;
   }
   #contact .send_form form fieldset .formlist ul {
-    padding-top: 60px;
+    padding-top: 50px;
   }
   #contact .send_form form fieldset .formlist ul li {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
   }
   #contact .send_form form fieldset .formlist ul li label {
     width: 150px;
-    font-size: 18px;
+    font-size: 16px;
     vertical-align: top;
   }
   #contact .send_form form fieldset .formlist ul li .inputbox input {
-    height: 40px;
+    height: 30px;
   }
   #contact .send_form form fieldset .formlist ul li .inputbox {
     display: inline-block;
@@ -1318,7 +1317,7 @@ a {
     li
     .inputbox
     input::placeholder {
-    font-size: 16px;
+    font-size: 14px;
   }
   #contact
     .send_form
@@ -1329,7 +1328,7 @@ a {
     li
     .inputbox
     textarea::placeholder {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   #contact .send_form form fieldset .formlist .btn_box button {
@@ -1352,7 +1351,7 @@ a {
     padding: 30px;
   }
   #contact .send_form form fieldset .thankyou_message article h4 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   #contact .pop_content {
@@ -1360,7 +1359,7 @@ a {
     padding: 40px 0;
   }
   #contact .contact_pop h3 {
-    font-size: 24px;
+    font-size: 18px;
   }
   #contact .pop_content p {
     padding: 50px 0;
