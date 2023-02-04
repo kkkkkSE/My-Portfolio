@@ -615,13 +615,12 @@ a {
 #work .work_wrap {
   width: 100%;
   height: calc(100% - 85px);
-  margin: 0 auto;
+  margin: 20px auto;
   position: relative;
 }
 #work .work_wrap .work_cont {
   display: none;
   height: 100%;
-  padding: 20px 0;
   display: none;
   flex-wrap: wrap;
 }
@@ -629,15 +628,18 @@ a {
   display: flex;
 }
 #work .work_wrap .work_cont .cont_child {
+  margin: 0 10px;
   width: 100%;
-  height: 70vh;
+  height: 90%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  box-sizing: content-box;
 }
 #work .work_wrap .work_cont .cont_child .img_part {
-  width: 95%;
-  height: 30%;
-  margin: 0 auto;
+  width: 100%;
+  height: 45%;
   overflow: hidden;
-  border-radius: 15px 15px 0 0;
   background-size: cover;
   background-position: 50% 0%;
 }
@@ -647,28 +649,29 @@ a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#work .work_wrap .work_cont .cont_child .img_part .dark .move_page {
-  display: block;
-  width: 100%;
-  height: 100%;
+
+#work .work_wrap .work_cont .cont_child .img_part .dark p {
+  color: #fff;
+  font-weight: bold;
 }
-#work .work_wrap .work_cont .cont_child .img_part .dark .move_page img {
-  width: 40px;
+#work .work_wrap .work_cont .cont_child .img_part .dark img {
+  width: 30px;
   filter: invert(1);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-bottom: 20px;
 }
 
 #work .work_wrap .work_cont .cont_child .txt_part {
   background-color: rgba(255, 255, 255, 0.7);
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
   padding: 16px;
-  /* height: calc(50% - 30px); */
-  border-radius: 0 0 15px 15px;
+  height: 55%;
+  position: relative;
 }
 #work .work_wrap .work_cont .cont_child .txt_part .work_title {
   line-height: 1.4;
@@ -696,9 +699,12 @@ a {
 }
 #work .work_wrap .work_cont .cont_child .txt_part .work_feature {
   border-top: 1px dashed #ccc;
-  padding-top: 10px;
-  margin-top: 10px;
-  height: 50%;
+  position: absolute;
+  width: calc(100% - 40px);
+  left: 0;
+  bottom: 0;
+  padding: 10px 0 5px;
+  margin: 0 20px;
   line-height: 1.5;
 }
 #work .work_wrap .work_cont .cont_child .txt_part .work_feature li {
@@ -1208,25 +1214,12 @@ a {
     font-size: 16px;
   }
 
-  #work .work_wrap {
-    width: 100%;
-  }
   #work .work_wrap .work_cont {
-    padding: 20px 0;
+    padding: 10px 0;
   }
-
-  #work .work_wrap .work_cont .cont_child .img_part {
-    height: 40%;
+  #work .work_wrap .work_cont .cont_child {
+    height: 95%;
   }
-
-  #work .work_wrap .work_cont .cont_child .img_part .dark {
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-  #work .work_wrap .work_cont .cont_child .img_part:hover .dark {
-    opacity: 1;
-  }
-
   #work .work_wrap .work_cont .cont_child .txt_part {
     padding: 20px;
   }
