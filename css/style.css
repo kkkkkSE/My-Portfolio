@@ -240,31 +240,42 @@ a {
   overflow: hidden;
 }
 #aboutMe .aboutMe_wrap .main_itdc {
-  padding: 80px 25px 0;
+  padding: 60px 25px 80px;
   width: calc(100% / 3);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #aboutMe .aboutMe_wrap .main_itdc .img_part {
-  width: 100%;
-  position: relative;
-  z-index: 4;
-  height: 35%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #aboutMe .aboutMe_wrap .main_itdc .img_part img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
   margin: 0 auto;
   object-fit: cover;
-  object-position: bottom;
+}
+#aboutMe .aboutMe_wrap .main_itdc .img_part b {
+  margin: 20px 0 5px;
+}
+#aboutMe .aboutMe_wrap .main_itdc .img_part span {
+  font-size: 13px;
+  color: #777;
 }
 
 #aboutMe .aboutMe_wrap .main_itdc .txt_part {
-  padding-top: 30px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_title {
+/* #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_title {
   width: 100%;
   padding: 10px 15px;
   background-color: var(--m-color);
@@ -289,15 +300,16 @@ a {
 }
 
 #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_title p {
-}
+} */
 #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_desc {
-  padding-top: 5px;
-  text-align: center;
+  width: 80%;
+  padding-top: 30px;
 }
 #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_desc p {
-  padding: 14px 8px 0;
   font-size: 14px;
   line-height: 1.5;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 #aboutMe .aboutMe_wrap .basic_itdc {
