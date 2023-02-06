@@ -240,9 +240,9 @@ a {
   overflow: hidden;
 }
 #aboutMe .aboutMe_wrap .main_itdc {
-  padding: 80px 25px 0;
+  padding: 70px 25px 0;
   width: calc(100% / 3);
-  height: calc(100vh - 80px);
+  height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -313,9 +313,9 @@ a {
 }
 
 #aboutMe .aboutMe_wrap .basic_itdc {
-  padding: 80px 25px 0;
+  padding: 70px 25px 0;
   width: calc(100% / 3);
-  height: calc(100vh - 80px);
+  height: calc(100vh - 90px);
 }
 #aboutMe .aboutMe_wrap .basic_itdc ul {
   height: 100%;
@@ -384,9 +384,9 @@ a {
 }
 
 #aboutMe .aboutMe_wrap .study_itdc {
-  padding: 80px 25px 0;
+  padding: 70px 25px 0;
   width: calc(100% / 3);
-  height: calc(100vh - 80px);
+  height: calc(100vh - 90px);
 }
 #aboutMe .aboutMe_wrap .study_itdc > ul {
   height: 100%;
