@@ -322,7 +322,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 #aboutMe .aboutMe_wrap .basic_itdc ul li {
   width: 95%;
@@ -331,7 +331,7 @@ a {
   display: flex;
   align-items: center;
   border-radius: 100px;
-  margin: 5px 0;
+  margin: 7px 0;
   overflow: hidden;
 }
 #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_title {
