@@ -95,14 +95,14 @@ a {
 .slick-dots {
   position: absolute;
   left: 50%;
-  bottom: 40px;
+  bottom: 36px;
   transform: translateX(-50%);
   display: flex;
 }
 .slick-dots li {
   width: 14px;
   height: 14px;
-  margin: 0 15px;
+  margin: 0 10px;
   border-radius: 50%;
   background-color: #ccc;
 }
@@ -240,9 +240,9 @@ a {
   overflow: hidden;
 }
 #aboutMe .aboutMe_wrap .main_itdc {
-  padding: 60px 25px 80px;
+  padding: 80px 25px 0;
   width: calc(100% / 3);
-  height: 100vh;
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -315,21 +315,23 @@ a {
 #aboutMe .aboutMe_wrap .basic_itdc {
   padding: 80px 25px 0;
   width: calc(100% / 3);
-  height: 100vh;
+  height: calc(100vh - 80px);
 }
 #aboutMe .aboutMe_wrap .basic_itdc ul {
+  height: 100%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 #aboutMe .aboutMe_wrap .basic_itdc ul li {
-  width: 100%;
-  height: 80px;
+  width: 95%;
+  height: 15%;
+  max-height: 80px;
   display: flex;
   align-items: center;
   border-radius: 100px;
-  margin-bottom: 20px;
+  margin: 5px 0;
   overflow: hidden;
 }
 #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_title {
@@ -356,7 +358,7 @@ a {
 
 #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_title img {
   display: block;
-  width: 40px;
+  width: 36px;
   filter: invert(1);
 }
 #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_title h4 {
@@ -371,13 +373,14 @@ a {
   border: 2px solid var(--m-color);
   width: 100%;
   height: 100%;
-  line-height: 76px;
   border-radius: 0 100px 100px 0;
   border-left: none;
+  display: flex;
+  align-items: center;
 }
 #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_cont p {
   display: inline-block;
-  font-size: 3px;
+  font-size: 13px;
 }
 
 #aboutMe .aboutMe_wrap .study_itdc {
