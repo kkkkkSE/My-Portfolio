@@ -239,6 +239,13 @@ a {
   height: 100vh;
   overflow: hidden;
 }
+#aboutMe .aboutMe_wrap .slider-count {
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  font-size: 14px;
+}
+
 #aboutMe .aboutMe_wrap .main_itdc {
   padding: 70px 25px 0;
   width: calc(100% / 3);
@@ -248,6 +255,7 @@ a {
   align-items: center;
   justify-content: center;
 }
+
 #aboutMe .aboutMe_wrap .main_itdc .img_part {
   display: flex;
   flex-direction: column;

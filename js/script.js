@@ -503,9 +503,18 @@ insert_skill.innerHTML = skill_data_wrap;
 // plugin 사용
 $(document).ready(function () {
   ///////////////////// slick plugin
+
   const slick_arr = [".aboutMe_wrap", ".skill_wrap"];
 
   for (v of slick_arr) {
+    $(".aboutMe_wrap").on("init", function (event, slick) {
+      $(this).append(
+        '<div class="slider-count"><p><span id="current">1</span> / <span id="total">' +
+          slick.slideCount +
+          "</span></p></div>"
+      );
+    });
+
     $(v).slick({
       infinite: true, // 무한반복
       dots: true, // navigator
@@ -513,6 +522,14 @@ $(document).ready(function () {
       slidesToScroll: 1, // 한번에 이동할 이미지의 개수
       autoplay: false, // 자동회전 여부
     });
+
+    $(".aboutMe_wrap").on(
+      "afterChange",
+      function (event, slick, currentSlide, nextSlide) {
+        // finally let's do this after changing slides
+        $(".slider-count #current").html(currentSlide + 1);
+      }
+    );
 
     // 페이지 1개일 때 네이게이터 숨기기
     if ($(v).find(".slick-slide").length == 1) {
