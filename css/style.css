@@ -244,6 +244,10 @@ a {
   right: 20px;
   top: 70px;
   font-size: 14px;
+  background-color: #777;
+  padding: 4px 6px;
+  border-radius: 20px;
+  color: #fff;
 }
 
 #aboutMe .aboutMe_wrap .main_itdc {
