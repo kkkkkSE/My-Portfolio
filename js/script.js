@@ -312,6 +312,10 @@ $(document).ready(function () {
   });
 
   ///////////////////// work section content
+  // $("#work .work_cont .cont_child").on("resize", function () {
+  //   $("#work .work_cont .cont_child").css("height", "100%");
+  // });
+
   $("#work .work_cont").each(function (index) {
     let cont_num = $(this).find(".cont_child").length; // 각 work 탭에 들어간 컨텐츠의 갯수
     let wrap_width = cont_num * 100;
@@ -443,68 +447,12 @@ $(document).ready(function () {
 });
 
 //////////// skill section data
-const insert_skill = document.querySelector("#skill .skill_wrap");
-const skill_arr = [
-  ["HTML5", "HTML5 문법의 이해, 적절하게 활용하여 마크업", "icons8-html-5.svg"],
-  ["CSS", "디자인 시안을 바탕으로 UI 스타일링에 활용", "icons8-css3.svg"],
-  [
-    "Javascript",
-    "모던 자바스크립트의 이해, 이벤트에 따른 문서조작 가능",
-    "icons8-javascript.svg",
-  ],
-  [
-    "jQuery",
-    "다양한 플러그인 사용 가능",
-    "icons8-jquery-is-a-javascript-library-designed-to-simplify-html-96.png",
-  ],
-  [
-    "React",
-    "SPA 웹사이트 제작 경험 보유, styled-components의 사용과 반응형 웹 적용 가능",
-    "icons8-react-native.svg",
-  ],
-  ["Typescript", "Interface를 이용한 type 정의", "icons8-typescript.svg"],
-  ["Git", "Git을 활용한 코드 관리, CI/CD 경험 보유", "icons8-git.svg"],
-];
-let skill_data_wrap = "";
-
-for (i = 0; i < skill_arr.length / 4; i++) {
-  // i = 0, 1
-  let skill_data = "";
-  i = i * 4;
-
-  for (j = i; j < i + 4; j++) {
-    skill_data += `
-      <li>
-        <div class="img_part">
-          <img src="./img/skill/${skill_arr[j][2]}" alt="${
-      skill_arr[j][0] + "로고"
-    }">
-        </div>
-        <div class="txt_part">
-          <h4>${skill_arr[j][0]}</h4>
-          <p>${skill_arr[j][1]}</p>
-        </div>
-      </li>
-    `;
-    if (j == skill_arr.length - 1) {
-      break;
-    }
-  }
-
-  skill_data_wrap += `
-    <ul class="skill_info">
-      ${skill_data}
-    </ul>
-`;
-}
-
-insert_skill.innerHTML = skill_data_wrap;
 
 // plugin 사용
 $(document).ready(function () {
   ///////////////////// slick plugin
 
-  const slick_arr = [".aboutMe_wrap", ".skill_wrap"];
+  const slick_arr = [".aboutMe_wrap"];
 
   for (v of slick_arr) {
     $(".aboutMe_wrap").on("init", function (event, slick) {
