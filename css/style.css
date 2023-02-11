@@ -816,7 +816,7 @@ a {
 }
 
 #contact .icons {
-  padding: 0 30px;
+  padding: 0 15px;
   height: calc(100% - 110px);
   display: flex;
   align-items: center;
