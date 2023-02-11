@@ -1038,12 +1038,14 @@ button {
   article
   .btn_box
   .msg_close {
+  display: inline-block;
   font-size: 14px;
   color: #fff;
   padding: 10px 15px;
   background-color: #777;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 
 #contact .contact_pop {
