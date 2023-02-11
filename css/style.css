@@ -37,6 +37,9 @@ ol {
 a {
   text-decoration: none;
 }
+button {
+  cursor: pointer;
+}
 :root {
   --m-color: #9e92dd;
   --s-color: #fffff3;
