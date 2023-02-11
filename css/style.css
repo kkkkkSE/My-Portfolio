@@ -813,15 +813,14 @@ a {
 
 #contact .icons {
   padding: 0 30px;
-  height: calc(100vh - 100px);
+  height: calc(100% - 110px);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 #contact .icons > div {
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
   border: 2px solid #fff;
   border-radius: 50%;
   display: flex;
@@ -834,14 +833,15 @@ a {
 }
 #contact > div img {
   display: block;
-  height: 40px;
+  height: 36px;
   filter: invert(1);
 }
 #contact > div p {
-  padding-top: 10px;
+  padding-top: 6px;
   width: 80%;
   text-align: center;
   color: #fff;
+  font-size: 13px;
 }
 
 #contact .send_mail:hover,
@@ -882,10 +882,9 @@ a {
 }
 #contact .send_form form fieldset .formlist {
   width: 80%;
-  height: 60%;
   background-color: #fff;
   border-radius: 15px;
-  padding: 0 5%;
+  padding: 30px 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -893,7 +892,7 @@ a {
 }
 #contact .send_form form fieldset .formlist legend {
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   position: relative;
 }
@@ -916,29 +915,31 @@ a {
   padding-bottom: 20px;
 }
 #contact .send_form form fieldset .formlist ul li label {
-  display: inline-block;
-  width: 120px;
+  display: block;
   font-size: 14px;
-  vertical-align: top;
+  font-weight: bold;
 }
 #contact .send_form form fieldset .formlist ul li label sup {
   color: var(--p-color-1);
 }
 #contact .send_form form fieldset .formlist ul li .inputbox {
   display: inline-block;
-  width: calc(100% - 130px);
+  width: 100%;
+  margin: 4px 0;
 }
 #contact .send_form form fieldset .formlist ul li .inputbox input {
   width: 100%;
   height: 30px;
   border: none;
   border-bottom: 1px solid #777;
+  font-size: 13px;
+  padding: 0;
 }
 #contact .send_form form fieldset .formlist ul li .inputbox input:focus {
   outline-color: var(--m-color);
 }
 #contact .send_form form fieldset .formlist ul li .inputbox input::placeholder {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 #contact .send_form form fieldset .formlist ul li .inputbox textarea {
@@ -947,6 +948,7 @@ a {
   height: 15vh;
   border: none;
   border-bottom: 1px solid #777;
+  padding: 5px 0;
 }
 #contact .send_form form fieldset .formlist ul li .inputbox textarea:focus {
   outline-color: var(--m-color);
@@ -960,7 +962,7 @@ a {
   li
   .inputbox
   textarea::placeholder {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 #contact .send_form form fieldset .formlist .btn_box {
@@ -1010,22 +1012,31 @@ a {
   width: 300px;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  padding: 20px;
+  padding: 25px 20px 20px;
   border-radius: 5px;
 }
 #contact .send_form form fieldset .thankyou_message article h4 {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
+  font-weight: normal;
 }
 #contact .send_form form fieldset .thankyou_message article .btn_box {
   text-align: center;
 }
-#contact .send_form form fieldset .thankyou_message article .btn_box a {
+#contact
+  .send_form
+  form
+  fieldset
+  .thankyou_message
+  article
+  .btn_box
+  .msg_close {
   font-size: 14px;
   color: #fff;
   padding: 10px 15px;
   background-color: #777;
   border-radius: 5px;
+  border: none;
 }
 
 #contact .contact_pop {
@@ -1059,7 +1070,7 @@ a {
 
 #contact .contact_pop h3 {
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   position: relative;
 }
@@ -1080,24 +1091,32 @@ a {
   color: #333;
   margin: 0 auto;
   line-height: 1;
-  padding: 40px 0;
+  padding: 40px 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #contact .pop_content p span {
   display: inline-block;
   padding-right: 5px;
   vertical-align: top;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#contact .pop_content a.pop_copy,
-#contact .pop_content a.pop_close,
-#contact .pop_content a.pop_go {
+#contact .pop_content .pop_copy,
+#contact .pop_content .pop_close,
+#contact .pop_content .pop_go {
   font-size: 14px;
   color: #fff;
   padding: 10px 15px;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
-#contact .pop_content a.pop_close {
+#contact .pop_content .pop_close {
   background-color: #777;
 }
 
