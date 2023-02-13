@@ -801,10 +801,6 @@ button {
   color: var(--m-color);
 }
 
-#work .work_btns {
-  display: none;
-}
-
 /******************** contact *******************/
 
 #contact {
@@ -891,7 +887,7 @@ button {
   width: 80%;
   background-color: #fff;
   border-radius: 15px;
-  padding: 30px 5%;
+  padding: 25px 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1158,13 +1154,9 @@ button {
     font-size: 26px;
   }
 
-  .slick-dots {
-    bottom: 50px;
-  }
   .slick-dots li {
-    width: 18px;
-    height: 18px;
-    margin: 0 20px;
+    width: 16px;
+    height: 16px;
   }
   /******************** header *******************/
   #header {
@@ -1194,14 +1186,9 @@ button {
   #aboutMe .aboutMe_wrap .main_itdc {
     padding: 90px 25px 0;
   }
-  #aboutMe .aboutMe_wrap .main_itdc .img_part {
-    height: 40%;
-  }
-  #aboutMe .aboutMe_wrap .main_itdc .img_part img {
-  }
 
   #aboutMe .aboutMe_wrap .main_itdc .txt_part {
-    padding-top: 5%;
+    padding-top: 10px;
   }
   #aboutMe .aboutMe_wrap .main_itdc .txt_part .intro_title {
     font-size: 16px;
@@ -1221,17 +1208,12 @@ button {
   }
   #aboutMe .aboutMe_wrap .basic_itdc ul li {
     width: 90%;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     height: 80px;
   }
-  #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_cont {
-    line-height: 76px;
-  }
-  #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_title {
-    padding: 0 20px 0 30px;
-  }
+
   #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_title h4 {
-    font-size: 16px;
+    font-size: 14px;
     width: 80px;
   }
   #aboutMe .aboutMe_wrap .basic_itdc ul li .itdc_cont p {
@@ -1249,7 +1231,7 @@ button {
     padding-bottom: 30px;
   }
   #aboutMe .aboutMe_wrap .study_itdc > ul > li h4 {
-    font-size: 18px;
+    font-size: 16px;
   }
   #aboutMe .aboutMe_wrap .study_itdc > ul > li h4 span {
     font-size: 18px;
@@ -1257,7 +1239,7 @@ button {
   }
 
   #aboutMe .aboutMe_wrap .study_itdc > ul > li > ul {
-    padding: 20px;
+    padding: 15px;
   }
   #aboutMe .aboutMe_wrap .study_itdc > ul > li > ul > li {
     font-size: 15px;
@@ -1273,26 +1255,7 @@ button {
     padding: 90px 25px 0;
   }
   #skill .skill_wrap {
-    padding: 30px 0;
-  }
-  #skill .skill_wrap .skill_info li {
-    width: 40%;
-    padding-bottom: 30px;
-  }
-
-  #skill .skill_wrap .skill_info li .img_part {
-    padding-bottom: 10px;
-  }
-  #skill .skill_wrap .skill_info li .img_part img {
-    height: 60px;
-  }
-  #skill .skill_wrap .skill_info li .txt_part h4 {
-    padding: 10px 0;
-    font-size: 16px;
-  }
-  #skill .skill_wrap .skill_info li .txt_part p {
-    padding: 5px 15px;
-    font-size: 14px;
+    padding: 20px 30px;
   }
 
   /******************** work *******************/
@@ -1317,7 +1280,7 @@ button {
     height: 95%;
   }
   #work .work_wrap .work_cont .cont_child .txt_part {
-    padding: 20px;
+    padding: 15px 20px;
   }
   #work .work_wrap .work_cont .cont_child .txt_part .work_title {
     font-size: 16px;
@@ -1334,47 +1297,24 @@ button {
   }
   #work .work_wrap .work_cont .cont_child .txt_part .work_feature li span {
     font-size: 16px;
-    padding-top: 5px;
-  }
-
-  #work .work_btns {
-    position: absolute;
-    width: 100%;
-    top: 55%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    font-size: 80px;
-    justify-content: space-between;
-    color: #333;
-    cursor: pointer;
-  }
-  #work .work_btns .left_btn {
-    opacity: 0;
   }
 
   /******************** contact *******************/
   #contact {
     padding: 90px 25px 0;
   }
-  #contact .icons {
-    height: calc(100vh - 120px);
-  }
+
   #contact .icons > div {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
   }
 
   #contact > div p {
-    padding-top: 15px;
-    font-size: 15px;
+    font-size: 16px;
   }
 
-  #contact .send_form form fieldset .formlist {
-    padding: 20px;
-  }
   #contact .send_form form fieldset .formlist legend {
-    font-size: 18px;
+    font-size: 20px;
   }
   #contact .send_form form fieldset .formlist ul {
     padding-top: 50px;
@@ -1383,17 +1323,12 @@ button {
     padding-bottom: 20px;
   }
   #contact .send_form form fieldset .formlist ul li label {
-    width: 150px;
-    font-size: 16px;
-    vertical-align: top;
+    font-size: 15px;
   }
   #contact .send_form form fieldset .formlist ul li .inputbox input {
     height: 30px;
   }
-  #contact .send_form form fieldset .formlist ul li .inputbox {
-    display: inline-block;
-    width: calc(100% - 160px);
-  }
+
   #contact
     .send_form
     form
@@ -1418,46 +1353,44 @@ button {
   }
 
   #contact .send_form form fieldset .formlist .btn_box button {
-    width: 150px;
-    height: 50px;
-    font-size: 16px;
+    width: 120px;
+    font-size: 15px;
   }
 
   #contact .send_form form fieldset .formlist .close {
-    top: 20px;
-    right: 20px;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    font-size: 24px;
+    top: 16px;
+    right: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 22px;
   }
 
   #contact .send_form form fieldset .thankyou_message article {
-    width: 400px;
-    padding: 30px;
+    width: 300px;
+    padding: 30px 0 25px;
   }
   #contact .send_form form fieldset .thankyou_message article h4 {
     font-size: 16px;
   }
 
   #contact .pop_content {
-    width: 400px;
-    padding: 40px 0;
+    padding: 30px 0 25px;
   }
   #contact .contact_pop h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
   #contact .pop_content p {
-    padding: 50px 0;
+    padding: 50px 0 40px;
   }
   #contact .pop_content p span {
     font-size: 20px;
   }
-  #contact .pop_content a.pop_copy,
-  #contact .pop_content a.pop_close,
-  #contact .pop_content a.pop_go {
-    font-size: 16px;
-    padding: 15px 20px;
-    margin: 0 5px;
+  #contact .pop_content .pop_copy,
+  #contact .pop_content .pop_close,
+  #contact .pop_content .pop_go {
+    font-size: 15px;
+    padding: 10px 15px;
+    margin: 0 3px;
   }
 }
