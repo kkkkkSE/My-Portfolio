@@ -490,7 +490,7 @@ $(document).ready(function () {
       "<span>Real success</span> is finding your lifework in the work that <span>you love.</span>",
     ],
     stringsElement: null, // 초기상태에 공간 비움
-    typeSpeed: 40, // 타이핑 속도
+    typeSpeed: 20, // 타이핑 속도
     loop: false, // 반복 안함
     showCursor: true,
     cursorChar: "|", // 커서 형태를 지정
