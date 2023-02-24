@@ -487,12 +487,14 @@ $(document).ready(function () {
   ///////////////////// typed plugin
   var typed = new Typed(".typed", {
     strings: [
-      "<span>Real success</span> is finding your lifework in the work that <span>you love.</span>",
+      "<span>Hello</span> World!",
+      "Welcome To My <span>Portfolio.</span>",
     ],
     stringsElement: null, // 초기상태에 공간 비움
-    typeSpeed: 20, // 타이핑 속도
+    typeSpeed: 30, // 타이핑 속도
+    backSpeed: 15,
     loop: false, // 반복 안함
     showCursor: true,
-    cursorChar: "|", // 커서 형태를 지정
+    cursorChar: "_", // 커서 형태를 지정
   });
 });

@@ -194,6 +194,7 @@ button {
   color: var(--s-color);
   font-family: "Noto Serif";
   display: inline;
+  font-size: 30px;
 }
 #main .black_bg .txt_wrap .main_title span {
   color: var(--m-color);
@@ -201,7 +202,7 @@ button {
 }
 #main .black_bg .arrow_part {
   width: 100%;
-  animation: scroll 1s linear infinite 2.5s;
+  animation: scroll 1s linear infinite 3.2s;
   opacity: 0;
   padding: 20px 0;
 }
